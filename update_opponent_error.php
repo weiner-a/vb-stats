@@ -1,6 +1,5 @@
 <?php
-$db = new mysqli('localhost', 'root', '', 'volleyball_stats');
-header('Content-Type: application/json');
+require_once 'db.php';header('Content-Type: application/json');
 
 $data = json_decode(file_get_contents('php://input'), true);
 $match_id = intval($data['match_id'] ?? 0);

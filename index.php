@@ -1,5 +1,5 @@
 <?php
-$db = new mysqli('localhost', 'root', '', 'volleyball_stats');
+require_once 'db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_player'])) {
     $fn = $db->real_escape_string($_POST['first_name']);

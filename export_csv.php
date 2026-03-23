@@ -1,6 +1,6 @@
 <?php
 // export_csv.php
-$db = new mysqli('localhost', 'root', '', 'volleyball_stats');
+require_once 'db.php';
 
 function zamienPolskieZnaki($text) {
     $polskie = ['ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ą', 'Ć', 'Ę', 'Ł', 'Ń', 'Ó', 'Ś', 'Ź', 'Ż'];

@@ -1,5 +1,5 @@
 <?php
-$db = new mysqli('localhost', 'root', '', 'volleyball_stats');
+require_once 'db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['all_selected_players'])) {
     $selectedPlayers = json_decode($_POST['all_selected_players'], true);

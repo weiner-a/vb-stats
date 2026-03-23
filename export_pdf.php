@@ -2,7 +2,7 @@
 require 'vendor/autoload.php';
 use Dompdf\Dompdf;
 
-$db = new mysqli('localhost', 'root', '', 'volleyball_stats');
+require_once 'db.php';
 
 $match_id = intval($_POST['match_id'] ?? 0);
 if (!$match_id) {

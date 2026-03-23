@@ -1,6 +1,6 @@
 <?php
 // update_stat.php
-$db = new mysqli('localhost', 'root', '', 'volleyball_stats');
+require_once 'db.php';
 header('Content-Type: application/json');
 
 $data = json_decode(file_get_contents('php://input'), true);

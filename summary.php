@@ -1,5 +1,5 @@
 <?php
-$db = new mysqli('localhost', 'root', '', 'volleyball_stats');
+require_once 'db.php';
 
 $match_id = isset($_GET['match_id']) ? intval($_GET['match_id']) : 0;
 if (!$match_id) {
